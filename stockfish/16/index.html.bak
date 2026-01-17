@@ -10,14 +10,14 @@
     <ul>
       <!-- Windows x64 -->
       <li>
-        <a href="https://github.com/Jay-ArBrouillard/chessar-engine-index/releases/download/stockfish-16/stockfish-windows-x86-64-avx2.zip">
+        <a href="https://github.com/<org>/chessar-engine-index/releases/download/stockfish-16/stockfish-windows-x86-64-avx2.zip">
           stockfish-windows-x86-64-avx2.zip
         </a>
       </li>
 
       <!-- Ubuntu x86-64 -->
       <li>
-        <a href="https://github.com/Jay-ArBrouillard/chessar-engine-index/releases/download/stockfish-16/stockfish-ubuntu-x86-64-avx2.tar">
+        <a href="https://github.com/<org>/chessar-engine-index/releases/download/stockfish-16/stockfish-ubuntu-x86-64-avx2.tar">
           stockfish-ubuntu-x86-64-avx2.tar
         </a>
       </li>
