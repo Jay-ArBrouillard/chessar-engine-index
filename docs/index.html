@@ -1,2 +1,209 @@
 <!doctype html>
-<html><body>OK</body></html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chessar Engine Index</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f7f8fa;
+        --card: #ffffff;
+        --text: #1f2937;
+        --muted: #4b5563;
+        --line: #d1d5db;
+        --accent: #0f766e;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+      }
+
+      .wrap {
+        max-width: 1100px;
+        margin: 24px auto;
+        padding: 0 16px;
+      }
+
+      h1 {
+        margin: 0 0 8px;
+      }
+
+      .subtitle {
+        margin: 0 0 16px;
+        color: var(--muted);
+      }
+
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 14px;
+      }
+
+      label {
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 6px;
+      }
+
+      #searchInput {
+        width: 100%;
+        max-width: 420px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 10px 12px;
+        font-size: 14px;
+      }
+
+      .meta {
+        margin: 10px 0 0;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .tableWrap {
+        margin-top: 14px;
+        overflow: auto;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        text-align: left;
+        padding: 10px;
+        border-bottom: 1px solid var(--line);
+        font-size: 14px;
+        vertical-align: top;
+      }
+
+      th {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        color: var(--muted);
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>Chessar Engine Index</h1>
+      <p class="subtitle">Search engines and jump to docs pages or mirrored GitHub releases.</p>
+
+      <div class="card">
+        <label for="searchInput">Quick Search</label>
+        <input id="searchInput" type="search" placeholder="Filter by engine, version, or tag (e.g. stockfish 18)" />
+        <p id="resultCount" class="meta"></p>
+
+        <div class="tableWrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Engine</th>
+                <th>Version</th>
+                <th>Docs Page</th>
+                <th>GitHub Release</th>
+              </tr>
+            </thead>
+            <tbody id="rows"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const repoBase = "https://github.com/Jay-ArBrouillard/chessar-engine-index";
+      const entries = [{"engine":"alexander","version":"7.0"},{"engine":"amoeba","version":"3.4"},{"engine":"ceechess","version":"2.2"},{"engine":"cfish","version":"12"},{"engine":"elixir","version":"3.0"},{"engine":"koivisto","version":"9.0"},{"engine":"pawn","version":"4.0"},{"engine":"reckless","version":"0.8.0"},{"engine":"sapling","version":"1.2.7"},{"engine":"stockfish","version":"1"},{"engine":"stockfish","version":"10"},{"engine":"stockfish","version":"11"},{"engine":"stockfish","version":"12"},{"engine":"stockfish","version":"13"},{"engine":"stockfish","version":"14"},{"engine":"stockfish","version":"14.1"},{"engine":"stockfish","version":"15"},{"engine":"stockfish","version":"15.1"},{"engine":"stockfish","version":"16"},{"engine":"stockfish","version":"17"},{"engine":"stockfish","version":"17.1"},{"engine":"stockfish","version":"18"},{"engine":"stockfish","version":"2"},{"engine":"stockfish","version":"3"},{"engine":"stockfish","version":"4"},{"engine":"stockfish","version":"4.5-dd"},{"engine":"stockfish","version":"5"},{"engine":"stockfish","version":"6"},{"engine":"stockfish","version":"7"},{"engine":"stockfish","version":"8"},{"engine":"stockfish","version":"9"},{"engine":"stormphrax","version":"7.0.0"},{"engine":"tarnished","version":"5.0"},{"engine":"viridithas","version":"19.0.1"},{"engine":"wasp","version":"4.5"},{"engine":"wasp","version":"5"},{"engine":"wasp","version":"5.2"},{"engine":"wasp","version":"5.5"},{"engine":"wasp","version":"6"},{"engine":"wasp","version":"6.5"},{"engine":"wasp","version":"7"}];
+
+      const collator = new Intl.Collator(undefined, { numeric: true, sensitivity: "base" });
+      const tbody = document.getElementById("rows");
+      const searchInput = document.getElementById("searchInput");
+      const resultCount = document.getElementById("resultCount");
+
+      function titleCase(slug) {
+        return slug.replace(/-/g, " ").replace(/\b\w/g, (m) => m.toUpperCase());
+      }
+
+      entries.sort((a, b) => {
+        const byEngine = collator.compare(a.engine, b.engine);
+        if (byEngine !== 0) return byEngine;
+        return collator.compare(b.version, a.version);
+      });
+
+      const rowModels = entries.map((entry) => {
+        const releaseTag = `${entry.engine}-${entry.version}`;
+        const docsHref = `./${entry.engine}/${entry.version}/index.html`;
+        const releaseHref = `${repoBase}/releases/tag/${releaseTag}`;
+
+        const tr = document.createElement("tr");
+
+        const engineTd = document.createElement("td");
+        engineTd.textContent = titleCase(entry.engine);
+        tr.appendChild(engineTd);
+
+        const versionTd = document.createElement("td");
+        versionTd.textContent = entry.version;
+        tr.appendChild(versionTd);
+
+        const docsTd = document.createElement("td");
+        const docsLink = document.createElement("a");
+        docsLink.href = docsHref;
+        docsLink.textContent = "Open Docs";
+        docsTd.appendChild(docsLink);
+        tr.appendChild(docsTd);
+
+        const releaseTd = document.createElement("td");
+        const releaseLink = document.createElement("a");
+        releaseLink.href = releaseHref;
+        releaseLink.textContent = releaseTag;
+        releaseTd.appendChild(releaseLink);
+        tr.appendChild(releaseTd);
+
+        tbody.appendChild(tr);
+
+        return {
+          tr,
+          searchText: `${entry.engine} ${entry.version} ${releaseTag}`.toLowerCase()
+        };
+      });
+
+      function applyFilter() {
+        const query = searchInput.value.trim().toLowerCase();
+        const tokens = query ? query.split(/\s+/) : [];
+        let visible = 0;
+
+        for (const row of rowModels) {
+          const match = tokens.every((token) => row.searchText.includes(token));
+          row.tr.hidden = !match;
+          if (match) visible += 1;
+        }
+
+        resultCount.textContent = `${visible} of ${rowModels.length} rows`;
+      }
+
+      searchInput.addEventListener("input", applyFilter);
+      applyFilter();
+    </script>
+  </body>
+</html>

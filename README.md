@@ -5,6 +5,10 @@
 This repository does **not** contain source code for engines.
 Instead, it provides a **stable, machine-readable distribution index** that points to prebuilt engine binaries hosted as GitHub Release assets.
 
+## Main Page Preview
+
+![Chessar Engine Index Main Page](docs/assets/main-page.png)
+
 ---
 
 ## Goals
