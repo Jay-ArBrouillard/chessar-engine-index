@@ -1,0 +1,22 @@
+Requirements:
+1. Find a uci chess engine not in the repo already with usable upstream binaries from their latest release (prefer variety).
+2. Mirror each engine into this repo (`Jay-ArBrouillard/chessar-engine-index`) as release tag:
+   - `<engine-slug>-<version>`
+3. Normalize all mirrored assets to `.zip` for consistency:
+   - Convert `.7z`, `.tar`, raw binaries, and `.exe` into `.zip`.
+4. If upstream only has Windows binaries, generate a Linux binary when feasible and include both Linux and Windows zips.
+5. Use explicit platform naming in release assets:
+   - `*-linux.zip` and `*.exe.zip` (or equivalent unambiguous names).
+6. Create/update docs page for each engine at:
+   - `docs/<engine-slug>/<version>/index.html`
+   - Separate Linux and Windows sections.
+   - Every link must point to the mirrored GitHub release asset URL in this repo.
+7. Keep `stockfish-18` as the repo’s latest release (do not promote new engine releases to latest).
+8. Validate final state:
+   - Release exists
+   - Assets uploaded
+   - HTML links resolve to existing assets
+9. Clean temp/download artifacts before finishing.
+
+Output:
+- List engines added, upstream source/tag used, mirrored release tags, asset names uploaded, docs files created/updated, and any blockers.
