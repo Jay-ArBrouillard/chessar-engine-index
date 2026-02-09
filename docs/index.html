@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -107,9 +107,9 @@
     </style>
   </head>
   <body>
-    <div class="wrap">
+      <div class="wrap">
       <h1>Chessar Engine Index</h1>
-      <p class="subtitle">Search engines and jump to docs pages or mirrored GitHub releases.</p>
+      <p class="subtitle">Search engines and jump to docs pages or release/download pages.</p>
 
       <div class="card">
         <label for="searchInput">Quick Search</label>
@@ -123,7 +123,7 @@
                 <th>Engine</th>
                 <th>Version</th>
                 <th>Docs Page</th>
-                <th>GitHub Release</th>
+                <th>Release</th>
               </tr>
             </thead>
             <tbody id="rows"></tbody>
@@ -134,7 +134,7 @@
 
     <script>
       const repoBase = "https://github.com/Jay-ArBrouillard/chessar-engine-index";
-      const entries = [{"engine":"4ku","version":"5.1"},{"engine":"alexander","version":"7.0"},{"engine":"amoeba","version":"3.4"},{"engine":"carp","version":"3.0.1"},{"engine":"ceechess","version":"2.2"},{"engine":"cfish","version":"12"},{"engine":"countergo","version":"1.55.0"},{"engine":"crazyara","version":"1.0.5"},{"engine":"crazyaraengine","version":"0.6.0"},{"engine":"elixir","version":"3.0"},{"engine":"fairystockfish","version":"14"},{"engine":"koivisto","version":"9.0"},{"engine":"lynx","version":"1.11.0"},{"engine":"pawn","version":"4.0"},{"engine":"plentychess","version":"7.0.0"},{"engine":"reckless","version":"0.8.0"},{"engine":"renegade","version":"1.2.0"},{"engine":"sapling","version":"1.2.7"},{"engine":"stockfish","version":"1"},{"engine":"stockfish","version":"10"},{"engine":"stockfish","version":"11"},{"engine":"stockfish","version":"12"},{"engine":"stockfish","version":"13"},{"engine":"stockfish","version":"14"},{"engine":"stockfish","version":"14.1"},{"engine":"stockfish","version":"15"},{"engine":"stockfish","version":"15.1"},{"engine":"stockfish","version":"16"},{"engine":"stockfish","version":"17"},{"engine":"stockfish","version":"17.1"},{"engine":"stockfish","version":"18"},{"engine":"stockfish","version":"2"},{"engine":"stockfish","version":"3"},{"engine":"stockfish","version":"4"},{"engine":"stockfish","version":"4.5-dd"},{"engine":"stockfish","version":"5"},{"engine":"stockfish","version":"6"},{"engine":"stockfish","version":"7"},{"engine":"stockfish","version":"8"},{"engine":"stockfish","version":"9"},{"engine":"stormphrax","version":"7.0.0"},{"engine":"tarnished","version":"5.0"},{"engine":"velvet","version":"8.1.1"},{"engine":"viridithas","version":"19.0.1"},{"engine":"wasp","version":"4.5"},{"engine":"wasp","version":"5"},{"engine":"wasp","version":"5.2"},{"engine":"wasp","version":"5.5"},{"engine":"wasp","version":"6"},{"engine":"wasp","version":"6.5"},{"engine":"wasp","version":"7"},{"engine":"weiawaga","version":"6.0"},{"engine":"winter","version":"4.0"}];
+      const entries = [{"engine":"4ku","version":"5.1"},{"engine":"aconcagua","version":"5.0.0"},{"engine":"alexander","version":"7.0"},{"engine":"alexandria","version":"8.1.12"},{"engine":"algae","version":"1.0"},{"engine":"alouette","version":"0.1.4"},{"engine":"amoeba","version":"3.4"},{"engine":"anodos","version":"1.2.0"},{"engine":"arcanum","version":"2.7"},{"engine":"astra","version":"6.1.1"},{"engine":"avalanche","version":"2.1.0"},{"engine":"beast","version":"3.2.3"},{"engine":"berserk","version":"13"},{"engine":"booot","version":"7.4"},{"engine":"byte-knight","version":"3.0.0"},{"engine":"caissa","version":"1.24"},{"engine":"carp","version":"3.0.1"},{"engine":"ceechess","version":"2.2"},{"engine":"cfish","version":"12"},{"engine":"clarity","version":"8.0.0"},{"engine":"clover","version":"9.1"},{"engine":"countergo","version":"1.55.0"},{"engine":"crazyara","version":"1.0.5"},{"engine":"crazyaraengine","version":"0.6.0"},{"engine":"devre","version":"6.0"},{"engine":"dragon","version":"1","releaseHref":"https://komodochess.com/pub/dragon.zip","releaseText":"dragon.zip (upstream)"},{"engine":"durandal","version":"0.0.8"},{"engine":"elixir","version":"3.0"},{"engine":"fairystockfish","version":"14"},{"engine":"fire","version":"10"},{"engine":"goldfish","version":"2.1.1"},{"engine":"grail","version":"1.0.4"},{"engine":"halogen","version":"15"},{"engine":"horsie","version":"1.1"},{"engine":"igel","version":"3.6.0"},{"engine":"illumina","version":"3"},{"engine":"inanis","version":"1.6.0"},{"engine":"integral","version":"7"},{"engine":"jimbo","version":"2.2.0"},{"engine":"kiyengine","version":"5.0.0"},{"engine":"koivisto","version":"9.0"},{"engine":"kojiro","version":"0.1.4"},{"engine":"komodo","version":"1.0","releaseHref":"https://komodochess.com/pub/komodo10-ja.zip","releaseText":"komodo10-ja.zip (upstream)"},{"engine":"komodo","version":"1.2","releaseHref":"https://komodochess.com/pub/komodo-12-ja.zip","releaseText":"komodo-12-ja.zip (upstream)"},{"engine":"komodo","version":"1.3","releaseHref":"https://komodochess.com/pub/komodo-13-ja.zip","releaseText":"komodo-13-ja.zip (upstream)"},{"engine":"komodo","version":"10","releaseHref":"https://komodochess.com/pub/komodo-10.zip","releaseText":"komodo-10.zip (upstream)"},{"engine":"komodo","version":"11","releaseHref":"https://komodochess.com/pub/komodo-11.zip","releaseText":"komodo-11.zip (upstream)"},{"engine":"komodo","version":"12.1.1","releaseHref":"https://komodochess.com/pub/komodo-12.zip","releaseText":"komodo-12.zip (upstream)"},{"engine":"komodo","version":"13","releaseHref":"https://komodochess.com/pub/komodo-13.zip","releaseText":"komodo-13.zip (upstream)"},{"engine":"komodo","version":"14.1","releaseHref":"https://komodochess.com/pub/komodo-14.zip","releaseText":"komodo-14.zip (upstream)"},{"engine":"komodo","version":"2.01","releaseHref":"https://komodochess.com/downloads.htm","releaseText":"komodo downloads (upstream)"},{"engine":"komodo","version":"2.03","releaseHref":"https://komodochess.com/downloads.htm","releaseText":"komodo downloads (upstream)"},{"engine":"komodo","version":"3","releaseHref":"https://komodochess.com/downloads.htm","releaseText":"komodo downloads (upstream)"},{"engine":"komodo","version":"4","releaseHref":"https://komodochess.com/pub/komodo4.zip","releaseText":"komodo4.zip (upstream)"},{"engine":"komodo","version":"5","releaseHref":"https://komodochess.com/pub/Komodo5.zip","releaseText":"Komodo5.zip (upstream)"},{"engine":"komodo","version":"5.1","releaseHref":"https://komodochess.com/pub/Komodo_5.1r2.zip","releaseText":"Komodo_5.1r2.zip (upstream)"},{"engine":"komodo","version":"6","releaseHref":"https://komodochess.com/pub/Komodo-6.zip","releaseText":"Komodo-6.zip (upstream)"},{"engine":"komodo","version":"7","releaseHref":"https://komodochess.com/pub/komodo-7.zip","releaseText":"komodo-7.zip (upstream)"},{"engine":"komodo","version":"8","releaseHref":"https://komodochess.com/pub/komodo-8.zip","releaseText":"komodo-8.zip (upstream)"},{"engine":"komodo","version":"9","releaseHref":"https://komodochess.com/pub/komodo-9.zip","releaseText":"komodo-9.zip (upstream)"},{"engine":"lizard","version":"11.2"},{"engine":"lunachess","version":"2.0.0"},{"engine":"lynx","version":"1.11.0"},{"engine":"milky","version":"0.3.0"},{"engine":"monolith","version":"2.01"},{"engine":"motor","version":"0.9.0"},{"engine":"obsidian","version":"16.0"},{"engine":"pawn","version":"4.0"},{"engine":"pawnocchio","version":"1.9.2"},{"engine":"peacekeeper","version":"3.01"},{"engine":"plentychess","version":"7.0.0"},{"engine":"polyfish","version":"20240114"},{"engine":"pounce","version":"3.0.0"},{"engine":"prune","version":"3.1.0"},{"engine":"quanticade","version":"3.0"},{"engine":"radiance","version":"4.2"},{"engine":"reckless","version":"0.8.0"},{"engine":"renegade","version":"1.2.0"},{"engine":"rubichess","version":"20240817"},{"engine":"sapling","version":"1.2.7"},{"engine":"seawall","version":"20250322"},{"engine":"seer","version":"2.8.0"},{"engine":"shallowguess","version":"0.4.0"},{"engine":"starzix","version":"6.1"},{"engine":"stockfish","version":"1"},{"engine":"stockfish","version":"10"},{"engine":"stockfish","version":"11"},{"engine":"stockfish","version":"12"},{"engine":"stockfish","version":"13"},{"engine":"stockfish","version":"14"},{"engine":"stockfish","version":"14.1"},{"engine":"stockfish","version":"15"},{"engine":"stockfish","version":"15.1"},{"engine":"stockfish","version":"16"},{"engine":"stockfish","version":"17"},{"engine":"stockfish","version":"17.1"},{"engine":"stockfish","version":"18"},{"engine":"stockfish","version":"2"},{"engine":"stockfish","version":"3"},{"engine":"stockfish","version":"4"},{"engine":"stockfish","version":"4.5-dd"},{"engine":"stockfish","version":"5"},{"engine":"stockfish","version":"6"},{"engine":"stockfish","version":"7"},{"engine":"stockfish","version":"8"},{"engine":"stockfish","version":"9"},{"engine":"stormphrax","version":"7.0.0"},{"engine":"tarnished","version":"5.0"},{"engine":"velvet","version":"8.1.1"},{"engine":"viridithas","version":"19.0.1"},{"engine":"wasp","version":"4.5"},{"engine":"wasp","version":"5"},{"engine":"wasp","version":"5.2"},{"engine":"wasp","version":"5.5"},{"engine":"wasp","version":"6"},{"engine":"wasp","version":"6.5"},{"engine":"wasp","version":"7"},{"engine":"weiawaga","version":"6.0"},{"engine":"whitespine","version":"1.3.2"},{"engine":"winter","version":"4.0"},{"engine":"zagreus","version":"5.0"},{"engine":"zahak","version":"10.0"},{"engine":"zeppelin","version":"1.1.0"},{"engine":"zugblitz","version":"1.3.1"}];
 
       const collator = new Intl.Collator(undefined, { numeric: true, sensitivity: "base" });
       const tbody = document.getElementById("rows");
@@ -154,7 +154,8 @@
       const rowModels = entries.map((entry) => {
         const releaseTag = `${entry.engine}-${entry.version}`;
         const docsHref = `./${entry.engine}/${entry.version}/index.html`;
-        const releaseHref = `${repoBase}/releases/tag/${releaseTag}`;
+        const releaseHref = entry.releaseHref ?? `${repoBase}/releases/tag/${releaseTag}`;
+        const releaseText = entry.releaseText ?? releaseTag;
 
         const tr = document.createElement("tr");
 
@@ -176,7 +177,7 @@
         const releaseTd = document.createElement("td");
         const releaseLink = document.createElement("a");
         releaseLink.href = releaseHref;
-        releaseLink.textContent = releaseTag;
+        releaseLink.textContent = releaseText;
         releaseTd.appendChild(releaseLink);
         tr.appendChild(releaseTd);
 
@@ -184,7 +185,7 @@
 
         return {
           tr,
-          searchText: `${entry.engine} ${entry.version} ${releaseTag}`.toLowerCase()
+          searchText: `${entry.engine} ${entry.version} ${releaseTag} ${releaseText}`.toLowerCase()
         };
       });
 

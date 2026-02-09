@@ -11,6 +11,7 @@ Requirements:
    - `docs/<engine-slug>/<version>/index.html`
    - Separate Linux and Windows sections.
    - Every link must point to the mirrored GitHub release asset URL in this repo.
+     Exception: If upstream terms prohibit redistribution/mirroring, do not mirror binaries. Link directly to upstream downloads and clearly label the entry as upstream-only.
 7. Keep `stockfish-18` as the repo's latest release (do not promote new engine releases to latest).
 8. Validate final state:
    - Release exists
@@ -39,7 +40,7 @@ Operational guardrails:
    - Release tag exists.
    - Expected assets exist on release.
    - Every docs link points to this repo's mirrored release asset URL and resolves (`HTTP 200`).
-   - `releases/latest` remains `stockfish-18`.
+     - `releases/latest` remains `stockfish-18`.
 6. Cleanup requirements:
    - Remove local temp/download artifacts.
    - Remove temporary probe releases/tags created during auth or API format checks.

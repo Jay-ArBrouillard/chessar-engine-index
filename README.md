@@ -139,7 +139,8 @@ The `index.html` file is intentionally simple and static.
 ### Requirements
 
 * Links **must be absolute URLs**
-* Links **must point to GitHub Release assets**
+* Links **must point to GitHub Release assets** (preferred)
+  * Exception: If upstream terms prohibit redistribution/mirroring, link directly to upstream downloads and label the entry as upstream-only.
 * File names should clearly encode:
 
   * OS
