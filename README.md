@@ -140,7 +140,8 @@ The `index.html` file is intentionally simple and static.
 
 * Links **must be absolute URLs**
 * Links **must point to GitHub Release assets** (preferred)
-  * Exception: If upstream terms prohibit redistribution/mirroring, link directly to upstream downloads and label the entry as upstream-only.
+  * For an upstream-only release, link directly to the publisher's download. When the publisher retires a download, keep the version page with its current availability and remove the expired asset links.
+* Include the corresponding source and license when redistributing binaries that require them.
 * File names should clearly encode:
 
   * OS
