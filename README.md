@@ -139,7 +139,8 @@ The `index.html` file is intentionally simple and static.
 ### Requirements
 
 * Links **must be absolute URLs**
-* Links **must point to GitHub Release assets** (preferred)
+* Prefer GitHub Release assets for automated downloads.
+  * When an engine comes from an authorized third-party bundle, the version page can link to its files for manual installation.
   * For an upstream-only release, link directly to the publisher's download. When the publisher retires a download, keep the version page with its current availability and remove the expired asset links.
 * Include the corresponding source and license when redistributing binaries that require them.
 * File names should clearly encode:
