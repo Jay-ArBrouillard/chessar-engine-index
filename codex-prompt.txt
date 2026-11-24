@@ -1,46 +1,14 @@
-Requirements:
-1. Find 4-5 uci chess engine candidates not in the repo already with usable upstream binaries from their latest release (prefer variety).
-2. Mirror each engine into this repo (`Jay-ArBrouillard/chessar-engine-index`) as release tag:
-   - `<engine-slug>-<version>`
-3. Normalize all mirrored assets to `.zip` for consistency:
-   - Convert `.7z`, `.tar`, raw binaries, and `.exe` into `.zip`.
-4. If upstream only has Windows binaries, generate a Linux binary when feasible and include both Linux and Windows zips.
-5. Use explicit platform naming in release assets:
-   - `*-linux.zip` and `*.exe.zip` (or equivalent unambiguous names).
-6. Create/update docs page for each engine at:
-   - `docs/<engine-slug>/<version>/index.html`
-   - Separate Linux and Windows sections.
-   - Every link must point to the mirrored GitHub release asset URL in this repo.
-     Exception: If upstream terms prohibit redistribution/mirroring, do not mirror binaries. Link directly to upstream downloads and clearly label the entry as upstream-only.
-7. Keep `stockfish-18` as the repo's latest release (do not promote new engine releases to latest).
-8. Validate final state:
-   - Release exists
-   - Assets uploaded
-   - HTML links resolve to existing assets
-9. Clean temp/download artifacts before finishing.
+Maintain the Chessar Engine Index against the live calibration roster at
+https://chessar.org/api/v1/engines/ranked.
 
-Output:
-- List engines added, upstream source/tag used, mirrored release tags, asset names uploaded, docs files created/updated, and any blockers.
-
-Operational guardrails:
-1. Preflight checks before mirroring:
-   - Confirm `gh` availability; if missing, use GitHub REST API with `curl`.
-   - Confirm GitHub auth works before heavy work (for example: `GET /user` or create/delete a draft probe release).
-   - Confirm latest release is `stockfish-18` before and after publishing.
-2. Windows PowerShell + GitHub REST payloads:
-   - For `POST`/`PATCH`, write JSON to a file and send with `--data-binary @payload.json`.
-   - Avoid inline JSON strings in PowerShell for release APIs.
-3. Release asset upload URL handling:
-   - Always strip the upload URL template suffix `"{?name,label}"`.
-   - Build upload URL as base + `?name=<escaped-asset-name>` using explicit string concatenation.
-4. Credential handling safety:
-   - Never print tokens or raw credential-manager output.
-   - Keep credentials in memory only for API calls.
-5. Validation must include:
-   - Release tag exists.
-   - Expected assets exist on release.
-   - Every docs link points to this repo's mirrored release asset URL and resolves (`HTTP 200`).
-     - `releases/latest` remains `stockfish-18`.
-6. Cleanup requirements:
-   - Remove local temp/download artifacts.
-   - Remove temporary probe releases/tags created during auth or API format checks.
+1. Verify the exact engine family and current version before changing the index.
+2. Keep one version page at docs/<engine-slug>/<version>/index.html for each
+   current family, and match that set in docs/index.html.
+3. Separate Linux and Windows downloads. Prefer explicitly named, versioned
+   release assets and include source and license information where required.
+4. Use the authorized upstream download or manual install instructions where
+   redistribution is restricted. Preserve the Komodo worker import instructions.
+5. Check that version pages and download links resolve after publication.
+   Keep stockfish-18 as the latest release while Stockfish 18 is current.
+6. Keep credentials out of commands, files, and output. Clean temporary files
+   created while preparing or validating releases.

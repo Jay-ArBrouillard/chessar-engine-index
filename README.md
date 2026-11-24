@@ -1,13 +1,11 @@
 # Chessar Engine Index
 
-**Chessar Engine Index** is a public, versioned index of **UCI chess engine binaries** used by the **Chessar platform** and its companion CLI, **`chessar-engine-manager`**.
+**Chessar Engine Index** is the public catalog for current **UCI engine builds** supported by Chessar calibration and used by **`chessar-engine-manager`**.
 
 This repository does **not** contain source code for engines.
 Instead, it provides a **stable, machine-readable distribution index** that points to prebuilt engine binaries hosted as GitHub Release assets.
 
-## Main Page Preview
-
-![Chessar Engine Index Main Page](docs/assets/main-page.png)
+[Browse the current engine index](https://jayarbrouillard.com/chessar-engine-index/)
 
 ---
 
@@ -19,7 +17,7 @@ This repository exists to:
 * Support **multiple operating systems**, CPU architectures, and instruction-set variants (AVX2, AVX-512, generic)
 * Allow **deterministic, automated installation** via CLI or CI
 * Decouple engine distribution from the Chessar application runtime
-* Scale cleanly to **hundreds of engines and versions**
+* Publish one current certified version per engine family
 
 ---
 
@@ -27,7 +25,7 @@ This repository exists to:
 
 1. Each engine version has a **directory** in this repository
 2. That directory contains an `index.html` file
-3. The `index.html` links to **GitHub Release assets** that contain engine binaries
+3. The `index.html` links to **GitHub Release assets** or to the engine's upstream distribution and manual installation instructions
 4. The Chessar Engine Manager:
 
    * Fetches the index page
@@ -41,98 +39,41 @@ This design avoids scraping GitHub APIs for every resolution and allows static h
 
 ## Repository Structure
 
-```
-chessar-engine-index/
-├── stockfish/
-│   ├── 17.1/
-│   │   └── index.html
-│   ├── 16/
-│   │   └── index.html
-│   └── README.md
-├── berserk/
-│   └── 1/
-│       └── index.html
-├── lc0/
-│   └── 0.31/
-│       └── index.html
-├── README.md
-```
-
-### Key Rules
-
-* **One directory per engine**
-* **One directory per engine version**
-* Versions may be **major-only** (`17`) or **major.minor** (`17.1`)
-* Each version directory **must contain `index.html`**
-
----
-
-## Versioning Strategy
-
-### Supported Version Formats
-
-The index supports both:
-
-* **Major versions**: `17`
-* **Minor versions**: `17.1`
-
-How they are resolved depends on your tooling configuration:
-
-| User Input | Index Used                               |
-| ---------- | ---------------------------------------- |
-| `17`       | `/stockfish/17/`                         |
-| `17.1`     | `/stockfish/17.1/` *or* `/stockfish/17/` |
-
-> The Chessar Engine Manager supports both **exact** and **major-fallback** resolution.
-
-### Recommendation
-
-* Use **major directories** unless binaries differ by minor version
-* Use **minor directories** only when required
-
----
+- `docs/index.html` lists the current calibration roster.
+- `docs/<engine>/<version>/index.html` lists downloads or setup instructions for that build.
+- Use the exact version shown in the index. When calibration adopts a new version, replace the previous version's listing and page.
 
 ## `index.html` Format
 
 The `index.html` file is intentionally simple and static.
 
-### Example: Stockfish 17
+### Stockfish 18 example
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>Stockfish 17</title>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Stockfish 18 Downloads</title>
+  </head>
+  <body>
+    <h1>Stockfish 18</h1>
 
-<h1>Stockfish 17</h1>
+    <ul>
+      <li>
+        <a href="https://github.com/Jay-ArBrouillard/chessar-engine-index/releases/download/stockfish-18/stockfish-windows-x86-64-avx2.zip">
+          stockfish-windows-x86-64-avx2.zip
+        </a>
+      </li>
 
-<ul>
-  <li>
-    <a href="https://github.com/official-stockfish/Stockfish/releases/download/sf_17/stockfish-windows-x86-64-avx2.zip">
-      stockfish-windows-x86-64-avx2.zip
-    </a>
-  </li>
-  <li>
-    <a href="https://github.com/official-stockfish/Stockfish/releases/download/sf_17/stockfish-windows-x86-64.zip">
-      stockfish-windows-x86-64.zip
-    </a>
-  </li>
-  <li>
-    <a href="https://github.com/official-stockfish/Stockfish/releases/download/sf_17/stockfish-linux-x86-64-avx2.tar.gz">
-      stockfish-linux-x86-64-avx2.tar.gz
-    </a>
-  </li>
-  <li>
-    <a href="https://github.com/official-stockfish/Stockfish/releases/download/sf_17/stockfish-linux-x86-64.tar.gz">
-      stockfish-linux-x86-64.tar.gz
-    </a>
-  </li>
-</ul>
+      <li>
+        <a href="https://github.com/Jay-ArBrouillard/chessar-engine-index/releases/download/stockfish-18/stockfish-ubuntu-x86-64-avx2.tar">
+          stockfish-ubuntu-x86-64-avx2.tar
+        </a>
+      </li>
+    </ul>
 
-</body>
+  </body>
 </html>
 ```
 
@@ -141,7 +82,7 @@ The `index.html` file is intentionally simple and static.
 * Links **must be absolute URLs**
 * Prefer GitHub Release assets for automated downloads.
   * When an engine comes from an authorized third-party bundle, the version page can link to its files for manual installation.
-  * For an upstream-only release, link directly to the publisher's download. When the publisher retires a download, keep the version page with its current availability and remove the expired asset links.
+  * For an upstream-only release, link directly to the publisher's download. For Komodo 14.1, follow the manual installation and Chessar worker instructions on its version page.
 * Include the corresponding source and license when redistributing binaries that require them.
 * File names should clearly encode:
 
@@ -207,13 +148,13 @@ This repository is designed to be hosted via **GitHub Pages**.
 
 1. Enable GitHub Pages
 2. Source: `main` branch
-3. Path: `/` (root)
+3. Path: `/docs`
 
 ### Resulting URLs
 
 ```
-https://<org>.github.io/chessar-engine-index/stockfish/17/
-https://<org>.github.io/chessar-engine-index/berserk/1/
+https://jayarbrouillard.com/chessar-engine-index/stockfish/18/
+https://jayarbrouillard.com/chessar-engine-index/berserk/13/
 ```
 
 These URLs are consumed directly by the engine manager.
@@ -232,8 +173,8 @@ The companion tool **`chessar-engine-manager`** uses this index to:
 Example:
 
 ```bash
-chessar-engine-manager resolve stockfish --version 17
-chessar-engine-manager install stockfish --version 17.1
+chessar-engine-manager resolve stockfish --version 18
+chessar-engine-manager install stockfish --version 18
 ```
 
 ---
@@ -249,13 +190,10 @@ chessar-engine-manager install stockfish --version 17.1
 
 ## Adding a New Engine (Checklist)
 
-1. Create engine directory: `engine-name/`
-2. Create version directory: `engine-name/<version>/`
-3. Add `index.html` with download links
-4. Ensure binaries exist as GitHub Release assets
-5. Write a meaningful release description
-6. Commit and push
-7. Verify Pages URL loads correctly
+1. Confirm the exact engine and version in the [Chessar ranked engine roster](https://chessar.org/api/v1/engines/ranked).
+2. Add or update `docs/<engine>/<version>/index.html` with download links or manual installation instructions.
+3. Update `docs/index.html` and keep one page for the current build of each family.
+4. Verify the index, version page, and download links after publishing.
 
 ---
 
@@ -290,12 +228,3 @@ If you are contributing engines or index updates:
 * Prefer clarity over cleverness
 
 For platform integration questions, refer to the Chessar project documentation.
-
----
-
-If you want, I can also provide:
-
-* A **template `index.html` generator**
-* Validation tooling for index consistency
-* A CI check to ensure all index pages resolve
-* A short “engine submission guide” for contributors
