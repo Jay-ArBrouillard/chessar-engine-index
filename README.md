@@ -115,6 +115,16 @@ Use consistent naming in asset filenames:
 
 ---
 
+## Engine Profile Attribution
+
+Chessar imports [`docs/engine-attribution.json`](docs/engine-attribution.json) for public managed engine profiles.
+
+- Use `schemaVersion: 1` and one entry in `projects` per Chessar engine family. Use the site's family key, such as `stockfish` or `black marlin`.
+- Set `authors` to the public names or handles credited by the project. Write a short `description` in your own words and use `projectUrl` for the original project's public site or repository. Use `creditsUrl` for a separate credits page or a preserved publisher document.
+- Add records under `builds` using the exact version Chessar displays. Set `sourceUrl` to the corresponding upstream release or source, `license` to the license for that build, and `licenseUrl` to the versioned license or publisher terms.
+- Keep previous build records so game history can still link to those releases. Leave a field out when its attribution or source is uncertain.
+- After publishing an update, select **Refresh attribution** in Chessar's **Engine admin → Engines** workspace.
+
 ## Release Descriptions
 
 Each engine version **should have a GitHub Release** containing:

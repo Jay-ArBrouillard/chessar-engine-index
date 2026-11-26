@@ -1,0 +1,1474 @@
+{
+  "schemaVersion": 1,
+  "projects": {
+    "akimbo": {
+      "authors": [
+        "Jamie Whiting"
+      ],
+      "description": "A Rust engine for standard chess and Chess960.",
+      "projectUrl": "https://github.com/jw1912/akimbo",
+      "builds": {
+        "1.0.0": {
+          "sourceUrl": "https://github.com/jw1912/akimbo/releases/tag/v1.0.0",
+          "license": "MIT",
+          "licenseUrl": "https://github.com/jw1912/akimbo/blob/v1.0.0/LICENSE"
+        }
+      }
+    },
+    "alexander": {
+      "authors": [
+        "Andrea Manzo",
+        "F. Ferraguti",
+        "K. Kiniama",
+        "The Stockfish developers"
+      ],
+      "description": "An engine from the Stockfish family, with its own search and playing adjustments.",
+      "projectUrl": "https://github.com/amchess/Alexander",
+      "creditsUrl": "https://github.com/amchess/Alexander/blob/7.0/AUTHORS",
+      "builds": {
+        "7.0": {
+          "sourceUrl": "https://github.com/amchess/Alexander/releases/tag/7.0",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/amchess/Alexander/blob/7.0/Copying.txt"
+        }
+      }
+    },
+    "alexandria": {
+      "authors": [
+        "Zuppa",
+        "CJ",
+        "Alexandria contributors"
+      ],
+      "description": "A bitboard engine with neural evaluation. Its network training draws on published Leela Chess Zero game data.",
+      "projectUrl": "https://github.com/PGG106/Alexandria",
+      "builds": {
+        "8.1.12": {
+          "sourceUrl": "https://github.com/PGG106/Alexandria/tree/e88f47068975ce9b77c960715a50a8f102c62904",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/PGG106/Alexandria/blob/e88f47068975ce9b77c960715a50a8f102c62904/LICENSE.md"
+        }
+      }
+    },
+    "anna": {
+      "authors": [
+        "Lironktf"
+      ],
+      "description": "A Rust engine that uses an efficiently updatable neural network to evaluate positions.",
+      "projectUrl": "https://github.com/Lironktf/anna-chess",
+      "builds": {
+        "1.2": {
+          "sourceUrl": "https://github.com/Lironktf/anna-chess/releases/tag/v1.2"
+        }
+      }
+    },
+    "apotheosis": {
+      "authors": [
+        "spamdrew128"
+      ],
+      "description": "A personal chess engine project built to learn and experiment with engine development.",
+      "projectUrl": "https://github.com/spamdrew128/Apotheosis",
+      "builds": {
+        "4.0.1": {
+          "sourceUrl": "https://github.com/spamdrew128/Apotheosis/releases/tag/v4.0.1"
+        }
+      }
+    },
+    "arasan": {
+      "authors": [
+        "Jon Dart"
+      ],
+      "description": "A long-running chess engine with a graphical interface available separately and support for command-line play.",
+      "projectUrl": "https://github.com/jdart1/arasan-chess",
+      "builds": {
+        "26.1": {
+          "sourceUrl": "https://github.com/jdart1/arasan-chess/releases/tag/v26.1",
+          "license": "Arasan license",
+          "licenseUrl": "https://github.com/jdart1/arasan-chess/blob/v26.1/LICENSE"
+        }
+      }
+    },
+    "arhanpassant": {
+      "authors": [
+        "Arhan Canli"
+      ],
+      "description": "A Rust engine that publishes its testing approach and trains neural evaluation on self-play.",
+      "projectUrl": "https://arhanpassant.com/",
+      "creditsUrl": "https://docs.rs/crate/arhanpassant/0.13.0/source/Cargo.toml",
+      "builds": {
+        "0.13.0": {
+          "sourceUrl": "https://github.com/arhancanli/arhanpassant/releases/tag/v0.13.0",
+          "license": "MIT or Apache 2.0",
+          "licenseUrl": "https://docs.rs/crate/arhanpassant/0.13.0/source/Cargo.toml"
+        }
+      }
+    },
+    "astra": {
+      "authors": [
+        "Semih Özalp"
+      ],
+      "description": "A chess engine written in C++ for use with UCI interfaces.",
+      "projectUrl": "https://github.com/h1me01/Astra",
+      "builds": {
+        "6.1.1": {
+          "sourceUrl": "https://github.com/h1me01/Astra/releases/tag/6.1.1",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/h1me01/Astra/blob/6.1.1/LICENSE"
+        }
+      }
+    },
+    "asymptote": {
+      "authors": [
+        "Maximilian Lupke"
+      ],
+      "description": "A Rust chess engine for UCI interfaces.",
+      "projectUrl": "https://github.com/malu/asymptote",
+      "builds": {
+        "0.8": {
+          "sourceUrl": "https://github.com/malu/asymptote/tree/v0.8",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/malu/asymptote/blob/v0.8/LICENSE"
+        }
+      }
+    },
+    "avalanche": {
+      "authors": [
+        "Yinuo Huang"
+      ],
+      "description": "A chess engine written in Zig.",
+      "projectUrl": "https://github.com/SnowballSH/Avalanche",
+      "builds": {
+        "2.1.0": {
+          "sourceUrl": "https://github.com/SnowballSH/Avalanche/releases/tag/v2.1.0",
+          "license": "MIT",
+          "licenseUrl": "https://github.com/SnowballSH/Avalanche/blob/v2.1.0/LICENSE"
+        }
+      }
+    },
+    "bbc": {
+      "authors": [
+        "Code Monkey King"
+      ],
+      "description": "Bit Board Chess is an educational engine that demonstrates bitboards and search in C.",
+      "projectUrl": "https://github.com/maksimKorzh/bbc",
+      "builds": {
+        "1.4": {
+          "sourceUrl": "https://github.com/maksimKorzh/bbc/releases/tag/1.4"
+        }
+      }
+    },
+    "beef": {
+      "authors": [
+        "Jonathan Tseng"
+      ],
+      "description": "A chess engine for UCI interfaces developed as a personal engine programming project.",
+      "projectUrl": "https://github.com/jtseng20/Beef",
+      "builds": {
+        "0.3.6": {
+          "sourceUrl": "https://github.com/jtseng20/Beef/tree/v0.3.6",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/jtseng20/Beef/blob/v0.3.6/LICENSE"
+        }
+      }
+    },
+    "berserk": {
+      "authors": [
+        "Jay Honnold"
+      ],
+      "description": "A C chess engine that uses neural networks to evaluate positions.",
+      "projectUrl": "https://github.com/jhonnold/berserk",
+      "creditsUrl": "https://github.com/jhonnold/berserk/blob/13/src/berserk.c",
+      "builds": {
+        "13": {
+          "sourceUrl": "https://github.com/jhonnold/berserk/releases/tag/13",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/jhonnold/berserk/blob/13/LICENSE"
+        }
+      }
+    },
+    "black marlin": {
+      "authors": [
+        "Doruk Şekercioğlu"
+      ],
+      "description": "A Rust engine with a search and evaluation system developed by its author.",
+      "projectUrl": "https://github.com/jnlt3/blackmarlin",
+      "builds": {
+        "9.0": {
+          "sourceUrl": "https://github.com/jnlt3/blackmarlin/releases/tag/9.0",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/jnlt3/blackmarlin/blob/9.0/LICENSE"
+        }
+      }
+    },
+    "blackcore": {
+      "authors": [
+        "SzilBalazs"
+      ],
+      "description": "A C++ engine built from scratch around neural-network evaluation.",
+      "projectUrl": "https://github.com/SzilBalazs/BlackCore",
+      "builds": {
+        "6.0": {
+          "sourceUrl": "https://github.com/SzilBalazs/BlackCore/releases/tag/6.0",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/SzilBalazs/BlackCore/blob/6.0/LICENSE"
+        }
+      }
+    },
+    "blunder": {
+      "authors": [
+        "Christian Dean"
+      ],
+      "description": "A Go chess engine whose design emphasizes code that learners can read and modify.",
+      "projectUrl": "https://github.com/deanmchris/blunder",
+      "builds": {
+        "8.5.5": {
+          "sourceUrl": "https://github.com/algerbrex/blunder/tree/v8.5.5",
+          "license": "MIT",
+          "licenseUrl": "https://github.com/deanmchris/blunder/blob/v8.5.5/LICENSE"
+        }
+      }
+    },
+    "booot": {
+      "authors": [
+        "Alex Morozov"
+      ],
+      "description": "A cross-platform chess engine written in Pascal.",
+      "projectUrl": "https://github.com/booot76/Booot-chess-engine",
+      "builds": {
+        "7.4": {
+          "sourceUrl": "https://github.com/booot76/Booot-chess-engine/releases/tag/7.4"
+        }
+      }
+    },
+    "byte-knight": {
+      "authors": [
+        "Paul Tsouchlos"
+      ],
+      "description": "A Rust engine that grew out of a submission to Sebastian Lague’s chess engine challenge.",
+      "projectUrl": "https://github.com/ptsouchlos/byte-knight",
+      "builds": {
+        "3.0.0": {
+          "sourceUrl": "https://github.com/ptsouchlos/byte-knight/releases/tag/v3.0.0",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/ptsouchlos/byte-knight/blob/v3.0.0/LICENSE"
+        }
+      }
+    },
+    "cadence": {
+      "authors": [
+        "grounzero"
+      ],
+      "description": "A Rust engine with neural evaluation and support for endgame tablebases.",
+      "projectUrl": "https://github.com/grounzero/cadence",
+      "builds": {
+        "0.6.0": {
+          "sourceUrl": "https://github.com/grounzero/cadence/releases/tag/0.6.0",
+          "license": "GNU GPL v3 or later",
+          "licenseUrl": "https://github.com/grounzero/cadence/blob/0.6.0/LICENSE"
+        }
+      }
+    },
+    "caissa": {
+      "authors": [
+        "Michał Witanowski"
+      ],
+      "description": "A C++ engine built from scratch for standard chess and Fischer Random.",
+      "projectUrl": "https://github.com/Witek902/Caissa",
+      "builds": {
+        "1.24": {
+          "sourceUrl": "https://github.com/Witek902/Caissa/releases/tag/1.24",
+          "license": "MIT",
+          "licenseUrl": "https://github.com/Witek902/Caissa/blob/1.24/LICENSE"
+        }
+      }
+    },
+    "carp": {
+      "authors": [
+        "Andrea Sgobbi"
+      ],
+      "description": "A Rust chess engine developed as a learning project.",
+      "projectUrl": "https://github.com/dede1751/carp",
+      "builds": {
+        "3.0.1": {
+          "sourceUrl": "https://github.com/dede1751/carp/releases/tag/v3.0.1",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/dede1751/carp/blob/v3.0.1/LICENSE"
+        }
+      }
+    },
+    "cfish": {
+      "authors": [
+        "Ronald de Man",
+        "The Stockfish developers"
+      ],
+      "description": "A port of Stockfish from C++ to C.",
+      "projectUrl": "https://github.com/syzygy1/Cfish",
+      "builds": {
+        "12": {
+          "sourceUrl": "https://github.com/syzygy1/Cfish/releases/tag/cfish_12",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/syzygy1/Cfish/blob/cfish_12/LICENSE"
+        }
+      }
+    },
+    "cheers": {
+      "authors": [
+        "Algorhythm-sxv"
+      ],
+      "description": "A lighthearted chess engine project written in Rust.",
+      "projectUrl": "https://github.com/Algorhythm-sxv/Cheers",
+      "builds": {
+        "1.0.0": {
+          "sourceUrl": "https://github.com/Algorhythm-sxv/Cheers/releases/tag/v1.0.0"
+        }
+      }
+    },
+    "chess.cpp": {
+      "authors": [
+        "Gediminas Masaitis"
+      ],
+      "description": "A C++ engine built from scratch that experiments with common chess-programming techniques.",
+      "projectUrl": "https://github.com/GediminasMasaitis/chess-dot-cpp",
+      "builds": {
+        "4.10": {
+          "sourceUrl": "https://github.com/GediminasMasaitis/chess-dot-cpp/releases/tag/4.10",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/GediminasMasaitis/chess-dot-cpp/blob/4.10/LICENSE"
+        }
+      }
+    },
+    "clarabit": {
+      "authors": [
+        "Salvador Pallares Bejarano"
+      ],
+      "description": "A chess engine with support for both WinBoard and UCI.",
+      "creditsUrl": "https://github.com/lukasmonk/lucaschessR6/blob/9b1c1d073423f67e5f99c439918913d4f32caa5c/bin/OS/linux/Engines/clarabit/Readme.txt",
+      "builds": {
+        "1.00": {
+          "license": "Clarabit license",
+          "licenseUrl": "https://github.com/lukasmonk/lucaschessR6/blob/9b1c1d073423f67e5f99c439918913d4f32caa5c/bin/OS/linux/Engines/clarabit/Readme.txt"
+        }
+      }
+    },
+    "clarity": {
+      "authors": [
+        "Vast"
+      ],
+      "description": "An engine that uses NNUE to evaluate chess positions.",
+      "projectUrl": "https://github.com/Vast342/Clarity",
+      "builds": {
+        "8.0.0": {
+          "sourceUrl": "https://github.com/Vast342/Clarity/releases/tag/V8.0.0",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/Vast342/Clarity/blob/V8.0.0/LICENSE"
+        }
+      }
+    },
+    "clover": {
+      "authors": [
+        "Luca Metehau"
+      ],
+      "description": "A C++ chess engine named for its creator’s favorite plant.",
+      "projectUrl": "https://github.com/lucametehau/CloverEngine",
+      "builds": {
+        "9.1": {
+          "sourceUrl": "https://github.com/lucametehau/CloverEngine/releases/tag/v9.1",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/lucametehau/CloverEngine/blob/v9.1/LICENSE"
+        }
+      }
+    },
+    "ct800": {
+      "authors": [
+        "Rasmus Althoff"
+      ],
+      "description": "An engine created for the CT800 dedicated chess computer, also available for UCI software.",
+      "projectUrl": "https://www.ct800.net/",
+      "builds": {
+        "1.46": {
+          "sourceUrl": "https://www.ct800.net/download",
+          "license": "GNU GPL v3 or later",
+          "licenseUrl": "https://www.ct800.net/download"
+        }
+      }
+    },
+    "discocheck": {
+      "authors": [
+        "Lucas Braesch"
+      ],
+      "description": "A UCI chess engine developed by Lucas Braesch and released as DiscoCheck.",
+      "creditsUrl": "https://open-chess.org/viewtopic.php?t=2711",
+      "builds": {
+        "5.2.1": {
+          "sourceUrl": "https://github.com/lukasmonk/lucaschessR6/blob/9b1c1d073423f67e5f99c439918913d4f32caa5c/bin/OS/linux/Engines/discocheck/src.7z",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/lukasmonk/lucaschessR6/blob/9b1c1d073423f67e5f99c439918913d4f32caa5c/bin/OS/linux/Engines/discocheck/license"
+        }
+      }
+    },
+    "dragon": {
+      "authors": [
+        "Don Dailey",
+        "Larry Kaufman",
+        "Mark Lefler",
+        "Dmitry Pervov",
+        "Dietrich Kappe"
+      ],
+      "description": "A chess engine from the Komodo team that uses neural-network evaluation.",
+      "projectUrl": "https://www.komodochess.com/",
+      "creditsUrl": "https://lucaschess.pythonanywhere.com/thanks?clave=Engines-2"
+    },
+    "drofa": {
+      "authors": [
+        "Alexander Litov",
+        "Rhys Rustad-Elliott"
+      ],
+      "description": "A C++ chess engine that began as a fork of Shallow Blue.",
+      "projectUrl": "https://github.com/justNo4b/Drofa",
+      "builds": {
+        "3.3.0": {
+          "sourceUrl": "https://github.com/justNo4b/Drofa/releases/tag/3.3.0",
+          "license": "MIT",
+          "licenseUrl": "https://github.com/justNo4b/Drofa/blob/3.3.0/LICENSE"
+        }
+      }
+    },
+    "elixir": {
+      "authors": [
+        "Arjun Basandrai"
+      ],
+      "description": "A C++ chess engine that continues its author’s earlier engine work.",
+      "projectUrl": "https://github.com/ArjunBasandrai/elixir-chess-engine",
+      "builds": {
+        "3.0": {
+          "sourceUrl": "https://github.com/ArjunBasandrai/elixir-chess-engine/releases/tag/v3.0",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/ArjunBasandrai/elixir-chess-engine/blob/v3.0/LICENSE"
+        }
+      }
+    },
+    "ethereal": {
+      "authors": [
+        "Andrew Grant",
+        "Alayan",
+        "Laldon"
+      ],
+      "description": "A chess engine that explores alpha-beta search and ideas from other open-source engines.",
+      "projectUrl": "https://github.com/AndyGrant/Ethereal",
+      "builds": {
+        "12.75": {
+          "sourceUrl": "https://github.com/AndyGrant/Ethereal/releases/tag/v12.75",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/AndyGrant/Ethereal/blob/v12.75/LICENSE"
+        }
+      }
+    },
+    "fairystockfish": {
+      "authors": [
+        "Fabian Fichter",
+        "Fairy-Stockfish contributors"
+      ],
+      "description": "A Stockfish-derived engine for many chess variants, including Xiangqi, Shogi, and Crazyhouse.",
+      "projectUrl": "https://github.com/fairy-stockfish/Fairy-Stockfish",
+      "creditsUrl": "https://github.com/fairy-stockfish/Fairy-Stockfish/blob/fairy_sf_14/AUTHORS",
+      "builds": {
+        "14": {
+          "sourceUrl": "https://github.com/fairy-stockfish/Fairy-Stockfish/releases/tag/fairy_sf_14",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/fairy-stockfish/Fairy-Stockfish/blob/fairy_sf_14/Copying.txt"
+        }
+      }
+    },
+    "fire": {
+      "authors": [
+        "Norman Schmidt"
+      ],
+      "description": "A UCI chess engine developed by Norman Schmidt.",
+      "projectUrl": "https://github.com/FireFather/fire",
+      "builds": {
+        "10": {
+          "sourceUrl": "https://github.com/FireFather/fire/releases/tag/fire-10"
+        }
+      }
+    },
+    "frozenight": {
+      "authors": [
+        "MinusKelvin"
+      ],
+      "description": "A Rust chess engine designed around neural-network evaluation.",
+      "projectUrl": "https://github.com/MinusKelvin/frozenight",
+      "builds": {
+        "6.0.0": {
+          "sourceUrl": "https://github.com/MinusKelvin/frozenight/releases/tag/v6.0.0",
+          "license": "MIT or Apache 2.0",
+          "licenseUrl": "https://github.com/MinusKelvin/frozenight/releases/tag/v6.0.0"
+        }
+      }
+    },
+    "fruit": {
+      "authors": [
+        "Fabien Letouzey"
+      ],
+      "description": "A chess engine whose publicly released 2.1 source made it a reference for other engine developers.",
+      "projectUrl": "https://www.fruitchess.com/about.htm",
+      "builds": {
+        "2.1": {
+          "sourceUrl": "https://github.com/lukasmonk/lucaschessR6/blob/9b1c1d073423f67e5f99c439918913d4f32caa5c/bin/OS/linux/Engines/fruit/src.7z",
+          "license": "GNU GPL v2",
+          "licenseUrl": "https://github.com/lukasmonk/lucaschessR6/blob/9b1c1d073423f67e5f99c439918913d4f32caa5c/bin/OS/linux/Engines/fruit/copying.txt"
+        }
+      }
+    },
+    "gaviota": {
+      "authors": [
+        "Miguel A. Ballicora"
+      ],
+      "description": "A chess engine and the project behind the Gaviota endgame tablebase format.",
+      "creditsUrl": "https://github.com/lukasmonk/lucaschessR6/blob/9b1c1d073423f67e5f99c439918913d4f32caa5c/bin/OS/linux/Engines/gaviota/readme.txt",
+      "builds": {
+        "0.84": {
+          "license": "Gaviota engine license",
+          "licenseUrl": "https://github.com/lukasmonk/lucaschessR6/blob/9b1c1d073423f67e5f99c439918913d4f32caa5c/bin/OS/linux/Engines/gaviota/readme.txt"
+        }
+      }
+    },
+    "godel": {
+      "authors": [
+        "Juan Manuel Vázquez"
+      ],
+      "description": "A UCI chess engine distributed with Lucas Chess.",
+      "creditsUrl": "https://github.com/lukasmonk/lucaschessR6/blob/9b1c1d073423f67e5f99c439918913d4f32caa5c/bin/OS/linux/Engines/godel/Readme.txt",
+      "builds": {
+        "7.0": {
+          "license": "Godel engine license",
+          "licenseUrl": "https://github.com/lukasmonk/lucaschessR6/blob/9b1c1d073423f67e5f99c439918913d4f32caa5c/bin/OS/linux/Engines/godel/Readme.txt"
+        }
+      }
+    },
+    "goldfish": {
+      "authors": [
+        "Bendik Samseth"
+      ],
+      "description": "A UCI chess engine and its author’s take on building a chess-playing program.",
+      "projectUrl": "https://github.com/bsamseth/Goldfish",
+      "builds": {
+        "2.1.1": {
+          "sourceUrl": "https://github.com/bsamseth/Goldfish/releases/tag/v2.1.1"
+        }
+      }
+    },
+    "greko": {
+      "authors": [
+        "Vladimir Medvedev"
+      ],
+      "description": "An engine with both UCI and WinBoard support and a long public release history.",
+      "projectUrl": "https://greko.su/index_en.html",
+      "builds": {
+        "2020.03": {
+          "sourceUrl": "https://github.com/lukasmonk/lucaschessR6/blob/9b1c1d073423f67e5f99c439918913d4f32caa5c/bin/OS/linux/Engines/greko/src.7z"
+        }
+      }
+    },
+    "gunborg": {
+      "authors": [
+        "Torbjörn Nilsson"
+      ],
+      "description": "A chess engine for UCI interfaces distributed with Lucas Chess.",
+      "projectUrl": "https://github.com/torgnil/gunborg",
+      "builds": {
+        "1.35": {
+          "sourceUrl": "https://github.com/torgnil/gunborg/tree/v1.35",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/torgnil/gunborg/blob/v1.35/LICENSE"
+        }
+      }
+    },
+    "halogen": {
+      "authors": [
+        "Kieren Pearson"
+      ],
+      "description": "A C++ chess engine using alpha-beta search and evaluation designed for computer chess.",
+      "projectUrl": "https://github.com/KierenP/Halogen",
+      "builds": {
+        "15": {
+          "sourceUrl": "https://github.com/KierenP/Halogen/releases/tag/v15",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/KierenP/Halogen/blob/v15/LICENSE"
+        }
+      }
+    },
+    "horsie": {
+      "authors": [
+        "Liam McGuire"
+      ],
+      "description": "A port of Lizard from C# to C++.",
+      "projectUrl": "https://github.com/liamt19/Horsie",
+      "builds": {
+        "1.1": {
+          "sourceUrl": "https://github.com/liamt19/Horsie/releases/tag/v1.1",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/liamt19/Horsie/blob/v1.1/LICENSE"
+        }
+      }
+    },
+    "igel": {
+      "authors": [
+        "Volodymyr Shcherbyna",
+        "Vladimir Medvedev"
+      ],
+      "description": "A UCI chess engine from Ukraine that began as a fork of GreKo.",
+      "projectUrl": "https://github.com/vshcherbyna/igel",
+      "builds": {
+        "3.6.0": {
+          "sourceUrl": "https://github.com/vshcherbyna/igel/releases/tag/3.6.0",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/vshcherbyna/igel/blob/3.6.0/LICENSE"
+        }
+      }
+    },
+    "illumina": {
+      "authors": [
+        "Thomas Mergener"
+      ],
+      "description": "A UCI chess engine developed by Thomas Mergener.",
+      "projectUrl": "https://github.com/Mergener/illumina",
+      "builds": {
+        "3": {
+          "sourceUrl": "https://github.com/Mergener/illumina/releases/tag/3",
+          "license": "MIT",
+          "licenseUrl": "https://github.com/Mergener/illumina/blob/3/license.md"
+        }
+      }
+    },
+    "inanis": {
+      "authors": [
+        "Paweł Osikowski"
+      ],
+      "description": "A Rust engine that succeeds Proxima b and Cosette.",
+      "projectUrl": "https://github.com/Tearth/Inanis",
+      "builds": {
+        "1.6.0": {
+          "sourceUrl": "https://github.com/Tearth/Inanis/releases/tag/v1.6.0",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/Tearth/Inanis/blob/v1.6.0/LICENSE.md"
+        }
+      }
+    },
+    "integral": {
+      "authors": [
+        "Aron Petkovski"
+      ],
+      "description": "A C++ engine with neural-network evaluation, developed as a personal chess project.",
+      "projectUrl": "https://github.com/aronpetko/integral",
+      "builds": {
+        "7": {
+          "sourceUrl": "https://github.com/aronpetko/integral/releases/tag/v7"
+        }
+      }
+    },
+    "k2": {
+      "authors": [
+        "Sergey Meus"
+      ],
+      "description": "A UCI chess engine developed by Sergey Meus.",
+      "projectUrl": "https://github.com/serg-meus/k2",
+      "builds": {
+        "0.99": {
+          "sourceUrl": "https://github.com/lukasmonk/lucaschessR6/blob/9b1c1d073423f67e5f99c439918913d4f32caa5c/bin/OS/linux/Engines/k2/src.7z",
+          "license": "GNU GPL v2",
+          "licenseUrl": "https://github.com/lukasmonk/lucaschessR6/blob/9b1c1d073423f67e5f99c439918913d4f32caa5c/bin/OS/linux/Engines/k2/LICENSE"
+        }
+      }
+    },
+    "koivisto": {
+      "authors": [
+        "Kim Kåhre",
+        "Finn Eggers"
+      ],
+      "description": "A C++ chess engine designed to be used through UCI-compatible clients.",
+      "projectUrl": "https://github.com/Luecx/Koivisto",
+      "builds": {
+        "9.0": {
+          "sourceUrl": "https://github.com/Luecx/Koivisto/releases/tag/v9.0",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/Luecx/Koivisto/blob/v9.0/LICENSE.md"
+        }
+      }
+    },
+    "kojiro": {
+      "authors": [
+        "Babak-SSH"
+      ],
+      "description": "A C++ engine written from scratch as an exploration of chess programming.",
+      "projectUrl": "https://github.com/Babak-SSH/Kojiro",
+      "builds": {
+        "0.1.4": {
+          "sourceUrl": "https://github.com/Babak-SSH/Kojiro/releases/tag/0.1.4"
+        }
+      }
+    },
+    "komodo": {
+      "authors": [
+        "Don Dailey",
+        "Larry Kaufman",
+        "Mark Lefler"
+      ],
+      "description": "An engine from the Komodo team, which combines computer-chess development and grandmaster expertise.",
+      "projectUrl": "https://www.komodochess.com/"
+    },
+    "laser": {
+      "authors": [
+        "Jeffrey An",
+        "Michael An"
+      ],
+      "description": "A C++ chess engine created by brothers Jeffrey and Michael An.",
+      "projectUrl": "https://github.com/jeffreyan11/laser-chess-engine",
+      "builds": {
+        "1.7": {
+          "sourceUrl": "https://github.com/jeffreyan11/laser-chess-engine/releases/tag/v1.7",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/jeffreyan11/laser-chess-engine/blob/v1.7/COPYING"
+        }
+      }
+    },
+    "leorik": {
+      "authors": [
+        "Thomas Jahn"
+      ],
+      "description": "A C# chess engine that evolved from MinimalChess.",
+      "projectUrl": "https://github.com/lithander/Leorik",
+      "builds": {
+        "3.2.1": {
+          "sourceUrl": "https://github.com/lithander/Leorik/releases/tag/3.2",
+          "license": "MIT",
+          "licenseUrl": "https://github.com/lithander/Leorik/blob/3.2/LICENSE"
+        }
+      }
+    },
+    "lizard": {
+      "authors": [
+        "Liam McGuire"
+      ],
+      "description": "A C# chess engine with its own implementation of alpha-beta search.",
+      "projectUrl": "https://github.com/liamt19/Lizard",
+      "builds": {
+        "11.2": {
+          "sourceUrl": "https://github.com/liamt19/Lizard/releases/tag/v11.2",
+          "license": "MIT",
+          "licenseUrl": "https://github.com/liamt19/Lizard/blob/v11.2/LICENSE.md"
+        }
+      }
+    },
+    "lynx": {
+      "authors": [
+        "Eduardo Cáceres"
+      ],
+      "description": "A C# engine that uses hand-crafted evaluation in this build.",
+      "projectUrl": "https://github.com/lynx-chess/Lynx",
+      "builds": {
+        "1.11.0": {
+          "sourceUrl": "https://github.com/lynx-chess/Lynx/releases/tag/v1.11.0",
+          "license": "MIT",
+          "licenseUrl": "https://github.com/lynx-chess/Lynx/blob/v1.11.0/LICENSE"
+        }
+      }
+    },
+    "marvin": {
+      "authors": [
+        "Martin Danielsson"
+      ],
+      "description": "A long-running engine that supports UCI and XBoard clients.",
+      "projectUrl": "https://github.com/bmdanielsson/marvin-chess",
+      "builds": {
+        "5.0.0": {
+          "sourceUrl": "https://github.com/bmdanielsson/marvin-chess/releases/tag/v5.0.0",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/bmdanielsson/marvin-chess/blob/v5.0.0/LICENSE"
+        }
+      }
+    },
+    "mess": {
+      "authors": [
+        "raklaptudirm"
+      ],
+      "description": "An open-source chess engine written in Go.",
+      "projectUrl": "https://github.com/raklaptudirm/mess",
+      "builds": {
+        "0.3.0": {
+          "sourceUrl": "https://github.com/raklaptudirm/mess/releases/tag/v0.3.0",
+          "license": "Apache 2.0",
+          "licenseUrl": "https://github.com/raklaptudirm/mess/blob/v0.3.0/LICENSE"
+        }
+      }
+    },
+    "monolith": {
+      "authors": [
+        "Jonas Mayr"
+      ],
+      "description": "A UCI chess engine implemented in C++17.",
+      "projectUrl": "https://github.com/cimarronOST/Monolith",
+      "builds": {
+        "2.01": {
+          "sourceUrl": "https://github.com/cimarronOST/Monolith/releases/tag/v2.01",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/cimarronOST/Monolith/blob/v2.01/LICENSE"
+        }
+      }
+    },
+    "motor": {
+      "authors": [
+        "Martin Novak"
+      ],
+      "description": "A C++ engine that evaluates positions with an efficiently updatable neural network.",
+      "projectUrl": "https://github.com/martinnovaak/motor",
+      "builds": {
+        "0.9.0": {
+          "sourceUrl": "https://github.com/martinnovaak/motor/releases/tag/v0.9.0"
+        }
+      }
+    },
+    "nalwald": {
+      "authors": [
+        "tsoj"
+      ],
+      "description": "A Nim engine that supports standard chess and Fischer Random.",
+      "projectUrl": "https://github.com/tsoj/Nalwald",
+      "builds": {
+        "19": {
+          "sourceUrl": "https://github.com/tsoj/Nalwald/releases/tag/19"
+        }
+      }
+    },
+    "obsidian": {
+      "authors": [
+        "Gabriele Lombardo"
+      ],
+      "description": "A C++ engine project that began in April 2023.",
+      "projectUrl": "https://github.com/gab8192/Obsidian",
+      "builds": {
+        "16.0": {
+          "sourceUrl": "https://github.com/gab8192/Obsidian/releases/tag/v16.0",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/gab8192/Obsidian/blob/v16.0/LICENSE"
+        }
+      }
+    },
+    "octochess": {
+      "authors": [
+        "Tim Kosse"
+      ],
+      "description": "A UCI chess engine by the creator of FileZilla.",
+      "projectUrl": "https://octochess.org/",
+      "builds": {
+        "r5190": {
+          "sourceUrl": "https://octochess.org/downloads/octochess-r5190.7z",
+          "license": "GNU GPL",
+          "licenseUrl": "https://octochess.org/"
+        }
+      }
+    },
+    "oxidation": {
+      "authors": [
+        "Mathmagician8191"
+      ],
+      "description": "The chess engine distributed as part of the Rust project Liberty Chess.",
+      "projectUrl": "https://github.com/Mathmagician8191/Liberty-Chess",
+      "builds": {
+        "0.7.2": {
+          "sourceUrl": "https://github.com/Mathmagician8191/Liberty-Chess/releases/tag/v0.7.2",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/Mathmagician8191/Liberty-Chess/blob/v0.7.2/LICENSE"
+        }
+      }
+    },
+    "patricia": {
+      "authors": [
+        "Adam Kulju"
+      ],
+      "description": "A chess engine developed and trained to favor aggressive play.",
+      "projectUrl": "https://github.com/Adam-Kulju/Patricia",
+      "builds": {
+        "5.1": {
+          "sourceUrl": "https://github.com/Adam-Kulju/Patricia/releases/tag/5.1",
+          "license": "MIT",
+          "licenseUrl": "https://github.com/Adam-Kulju/Patricia/blob/5.1/LICENSE"
+        }
+      }
+    },
+    "pawn": {
+      "authors": [
+        "Rui Pedro"
+      ],
+      "description": "An experimental alpha-beta chess engine inspired by Stockfish.",
+      "projectUrl": "https://github.com/ruicoelhopedro/pawn",
+      "builds": {
+        "4.0": {
+          "sourceUrl": "https://github.com/ruicoelhopedro/pawn/releases/tag/v4.0",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/ruicoelhopedro/pawn/blob/v4.0/LICENSE"
+        }
+      }
+    },
+    "pawnocchio": {
+      "authors": [
+        "Jonathan Hallström"
+      ],
+      "description": "A UCI chess engine implemented in Zig.",
+      "projectUrl": "https://github.com/JonathanHallstrom/pawnocchio",
+      "builds": {
+        "1.9.2": {
+          "sourceUrl": "https://github.com/JonathanHallstrom/pawnocchio/releases/tag/v1.9.2",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/JonathanHallstrom/pawnocchio/blob/v1.9.2/LICENSE"
+        }
+      }
+    },
+    "peacekeeper": {
+      "authors": [
+        "Kyle Zhang"
+      ],
+      "description": "A chess engine written in C++17.",
+      "projectUrl": "https://github.com/Sazgr/peacekeeper",
+      "builds": {
+        "3.01": {
+          "sourceUrl": "https://github.com/Sazgr/peacekeeper/releases/tag/v3.01",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/Sazgr/peacekeeper/blob/v3.01/LICENSE"
+        }
+      }
+    },
+    "pigeon": {
+      "authors": [
+        "Stuart Riffle"
+      ],
+      "description": "A UCI engine developed as the Pigeon Chess Engine project.",
+      "projectUrl": "https://pigeonengine.com/",
+      "builds": {
+        "1.5.1": {
+          "sourceUrl": "https://github.com/StuartRiffle/pigeon/tree/1.5.1",
+          "license": "MIT",
+          "licenseUrl": "https://github.com/lukasmonk/lucaschessR6/blob/9b1c1d073423f67e5f99c439918913d4f32caa5c/bin/OS/linux/Engines/pigeon/LICENSE.txt"
+        }
+      }
+    },
+    "plentychess": {
+      "authors": [
+        "Yoshie2000"
+      ],
+      "description": "A UCI engine that evaluates positions using NNUE.",
+      "projectUrl": "https://github.com/Yoshie2000/PlentyChess",
+      "builds": {
+        "7.0.0": {
+          "sourceUrl": "https://github.com/Yoshie2000/PlentyChess/releases/tag/b-v7.0.0",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/Yoshie2000/PlentyChess/blob/b-v7.0.0/LICENSE"
+        }
+      }
+    },
+    "polyfish": {
+      "authors": [
+        "Khalid Omar",
+        "The Stockfish developers"
+      ],
+      "description": "A Stockfish-derived engine that adds support for several opening-book formats.",
+      "projectUrl": "https://github.com/khalid-a-omar/Polyfish",
+      "creditsUrl": "https://github.com/khalid-a-omar/Polyfish/blob/20240114/AUTHORS.md",
+      "builds": {
+        "20240114": {
+          "sourceUrl": "https://github.com/khalid-a-omar/Polyfish/releases/tag/20240114",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/khalid-a-omar/Polyfish/blob/20240114/LICENSE.md"
+        }
+      }
+    },
+    "pounce": {
+      "authors": [
+        "Alex Flick"
+      ],
+      "description": "A UCI-compatible chess engine written in Rust.",
+      "projectUrl": "https://github.com/0xflick/pounce",
+      "builds": {
+        "3.0.0": {
+          "sourceUrl": "https://github.com/0xflick/pounce/releases/tag/v3.0.0",
+          "license": "MIT",
+          "licenseUrl": "https://github.com/0xflick/pounce/blob/v3.0.0/LICENSE"
+        }
+      }
+    },
+    "prune": {
+      "authors": [
+        "tgirolami09",
+        "jbienvenue"
+      ],
+      "description": "A C++ chess engine developed as a collaboration between two hobbyists.",
+      "projectUrl": "https://github.com/tgirolami09/Prune",
+      "builds": {
+        "3.1.0": {
+          "sourceUrl": "https://github.com/tgirolami09/Prune/releases/tag/v3.1.0"
+        }
+      }
+    },
+    "quanticade": {
+      "authors": [
+        "DarkNeutrino"
+      ],
+      "description": "A C engine whose neural evaluation was trained with data from Leela Chess Zero.",
+      "projectUrl": "https://github.com/Quanticade/Quanticade",
+      "builds": {
+        "3.0": {
+          "sourceUrl": "https://github.com/Quanticade/Quanticade/releases/tag/Cronus-3.0",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/Quanticade/Quanticade/blob/Cronus-3.0/LICENSE"
+        }
+      }
+    },
+    "radiance": {
+      "authors": [
+        "Paul-Elie Pipelin"
+      ],
+      "description": "A chess engine written in Zig.",
+      "projectUrl": "https://github.com/ppipelin/radiance",
+      "builds": {
+        "4.2": {
+          "sourceUrl": "https://github.com/ppipelin/radiance/releases/tag/4.2",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/ppipelin/radiance/blob/4.2/LICENSE.md"
+        }
+      }
+    },
+    "reckless": {
+      "authors": [
+        "Arseniy Surkov",
+        "Shahin M. Shahin",
+        "Styx"
+      ],
+      "description": "A Rust engine developed to compete in computer chess.",
+      "projectUrl": "https://github.com/codedeliveryservice/Reckless",
+      "builds": {
+        "0.8.0": {
+          "sourceUrl": "https://github.com/codedeliveryservice/Reckless/releases/tag/v0.8.0"
+        }
+      }
+    },
+    "renegade": {
+      "authors": [
+        "Krisztián Peőcz"
+      ],
+      "description": "A C++ engine built from scratch with neural evaluation and an emphasis on readable source.",
+      "projectUrl": "https://github.com/pkrisz99/Renegade",
+      "builds": {
+        "1.2.0": {
+          "sourceUrl": "https://github.com/pkrisz99/Renegade/releases/tag/v1.2.0",
+          "license": "MIT",
+          "licenseUrl": "https://github.com/pkrisz99/Renegade/blob/v1.2.0/LICENSE"
+        }
+      }
+    },
+    "rodent ii": {
+      "authors": [
+        "Paweł Kozioł"
+      ],
+      "description": "The second generation of Rodent, a chess engine known for configurable playing personalities.",
+      "creditsUrl": "https://lucaschess.pythonanywhere.com/thanks?clave=Engines-2",
+      "builds": {
+        "0.9.64": {
+          "sourceUrl": "https://github.com/lukasmonk/lucaschessR6/blob/9b1c1d073423f67e5f99c439918913d4f32caa5c/bin/OS/linux/Engines/rodentii/src.7z",
+          "license": "GNU GPL v2",
+          "licenseUrl": "https://github.com/lukasmonk/lucaschessR6/blob/9b1c1d073423f67e5f99c439918913d4f32caa5c/bin/OS/linux/Engines/rodentii/LICENSE"
+        }
+      }
+    },
+    "rubichess": {
+      "authors": [
+        "Andreas Matthies"
+      ],
+      "description": "A UCI chess engine with a public changelog covering its development.",
+      "projectUrl": "https://github.com/Matthies/RubiChess",
+      "builds": {
+        "20240817": {
+          "sourceUrl": "https://github.com/Matthies/RubiChess/releases/tag/20240817"
+        }
+      }
+    },
+    "sapling": {
+      "authors": [
+        "Tim Jones"
+      ],
+      "description": "A chess engine written for .NET.",
+      "projectUrl": "https://github.com/Timmoth/Sapling",
+      "builds": {
+        "1.2.7": {
+          "sourceUrl": "https://github.com/Timmoth/Sapling/releases/tag/Sapling-1.2.7",
+          "license": "Apache 2.0",
+          "licenseUrl": "https://github.com/Timmoth/Sapling/blob/Sapling-1.2.7/LICENSE"
+        }
+      }
+    },
+    "seer": {
+      "authors": [
+        "Connor McMonigle"
+      ],
+      "description": "An engine whose neural network estimates the likelihood of a win, draw, or loss.",
+      "projectUrl": "https://github.com/connormcmonigle/seer-nnue",
+      "builds": {
+        "2.8.0": {
+          "sourceUrl": "https://github.com/connormcmonigle/seer-nnue/releases/tag/v2.8.0",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/connormcmonigle/seer-nnue/blob/v2.8.0/LICENSE.md"
+        }
+      }
+    },
+    "sirius": {
+      "authors": [
+        "mcthouacbb"
+      ],
+      "description": "A UCI chess engine written in C++.",
+      "projectUrl": "https://github.com/mcthouacbb/Sirius",
+      "builds": {
+        "9.0": {
+          "sourceUrl": "https://github.com/mcthouacbb/Sirius/releases/tag/v9.0"
+        }
+      }
+    },
+    "starzix": {
+      "authors": [
+        "zzzzz"
+      ],
+      "description": "A chess engine developed in C++.",
+      "projectUrl": "https://github.com/zzzzz151/Starzix",
+      "builds": {
+        "6.1": {
+          "sourceUrl": "https://github.com/zzzzz151/Starzix/releases/tag/6.1",
+          "license": "WTFPL v2",
+          "licenseUrl": "https://github.com/zzzzz151/Starzix/blob/6.1/LICENSE"
+        }
+      }
+    },
+    "stash": {
+      "authors": [
+        "Morgan Houppin"
+      ],
+      "description": "A UCI engine developed from scratch.",
+      "projectUrl": "https://gitlab.com/mhouppin/stash-bot",
+      "builds": {
+        "29.0": {
+          "sourceUrl": "https://github.com/mhouppin/stash-bot/releases/tag/v29.0",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/mhouppin/stash-bot/blob/v29.0/LICENSE"
+        }
+      }
+    },
+    "stockfish": {
+      "authors": [
+        "Tord Romstad",
+        "Marco Costalba",
+        "Joona Kiiski",
+        "Gary Linscott",
+        "Stockfish contributors"
+      ],
+      "description": "A collaborative open-source engine with neural evaluation and a public distributed testing platform.",
+      "projectUrl": "https://stockfishchess.org/",
+      "creditsUrl": "https://github.com/official-stockfish/Stockfish/blob/sf_18/AUTHORS",
+      "builds": {
+        "18": {
+          "sourceUrl": "https://github.com/official-stockfish/Stockfish/releases/tag/sf_18",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/official-stockfish/Stockfish/blob/sf_18/Copying.txt"
+        },
+        "3": {
+          "sourceUrl": "https://github.com/official-stockfish/Stockfish/tree/sf_3",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/official-stockfish/Stockfish/blob/sf_3/Copying.txt"
+        },
+        "5": {
+          "sourceUrl": "https://github.com/official-stockfish/Stockfish/tree/sf_5",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/official-stockfish/Stockfish/blob/sf_5/Copying.txt"
+        },
+        "6": {
+          "sourceUrl": "https://github.com/official-stockfish/Stockfish/tree/sf_6",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/official-stockfish/Stockfish/blob/sf_6/Copying.txt"
+        },
+        "7": {
+          "sourceUrl": "https://github.com/official-stockfish/Stockfish/tree/sf_7",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/official-stockfish/Stockfish/blob/sf_7/Copying.txt"
+        },
+        "8": {
+          "sourceUrl": "https://github.com/official-stockfish/Stockfish/tree/sf_8",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/official-stockfish/Stockfish/blob/sf_8/Copying.txt"
+        },
+        "9": {
+          "sourceUrl": "https://github.com/official-stockfish/Stockfish/tree/sf_9",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/official-stockfish/Stockfish/blob/sf_9/Copying.txt"
+        },
+        "10": {
+          "sourceUrl": "https://github.com/official-stockfish/Stockfish/tree/sf_10",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/official-stockfish/Stockfish/blob/sf_10/Copying.txt"
+        },
+        "11": {
+          "sourceUrl": "https://github.com/official-stockfish/Stockfish/tree/sf_11",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/official-stockfish/Stockfish/blob/sf_11/Copying.txt"
+        },
+        "12": {
+          "sourceUrl": "https://github.com/official-stockfish/Stockfish/tree/sf_12",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/official-stockfish/Stockfish/blob/sf_12/Copying.txt"
+        },
+        "13": {
+          "sourceUrl": "https://github.com/official-stockfish/Stockfish/tree/sf_13",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/official-stockfish/Stockfish/blob/sf_13/Copying.txt"
+        },
+        "14": {
+          "sourceUrl": "https://github.com/official-stockfish/Stockfish/tree/sf_14",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/official-stockfish/Stockfish/blob/sf_14/Copying.txt"
+        },
+        "14.1": {
+          "sourceUrl": "https://github.com/official-stockfish/Stockfish/tree/sf_14.1",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/official-stockfish/Stockfish/blob/sf_14.1/Copying.txt"
+        },
+        "15": {
+          "sourceUrl": "https://github.com/official-stockfish/Stockfish/tree/sf_15",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/official-stockfish/Stockfish/blob/sf_15/Copying.txt"
+        },
+        "15.1": {
+          "sourceUrl": "https://github.com/official-stockfish/Stockfish/tree/sf_15.1",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/official-stockfish/Stockfish/blob/sf_15.1/Copying.txt"
+        },
+        "16": {
+          "sourceUrl": "https://github.com/official-stockfish/Stockfish/tree/sf_16",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/official-stockfish/Stockfish/blob/sf_16/Copying.txt"
+        },
+        "17": {
+          "sourceUrl": "https://github.com/official-stockfish/Stockfish/tree/sf_17",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/official-stockfish/Stockfish/blob/sf_17/Copying.txt"
+        },
+        "17.1": {
+          "sourceUrl": "https://github.com/official-stockfish/Stockfish/tree/sf_17.1",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/official-stockfish/Stockfish/blob/sf_17.1/Copying.txt"
+        }
+      }
+    },
+    "stormphrax": {
+      "authors": [
+        "Ciekce"
+      ],
+      "description": "An engine for chess and Chess960 with neural evaluation trained from scratch.",
+      "projectUrl": "https://github.com/Ciekce/Stormphrax",
+      "builds": {
+        "7.0.0": {
+          "sourceUrl": "https://github.com/Ciekce/Stormphrax/releases/tag/v7.0.0",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/Ciekce/Stormphrax/blob/v7.0.0/LICENSE"
+        }
+      }
+    },
+    "supernova": {
+      "authors": [
+        "Minkai Yang"
+      ],
+      "description": "A UCI chess engine by the Supernova project’s creator, Minkai Yang.",
+      "projectUrl": "https://github.com/MichaeltheCoder7/Supernova",
+      "builds": {
+        "2.3": {
+          "sourceUrl": "https://github.com/MichaeltheCoder7/Supernova/tree/v2.3",
+          "license": "MIT",
+          "licenseUrl": "https://github.com/MichaeltheCoder7/Supernova/blob/v2.3/LICENSE"
+        }
+      }
+    },
+    "tarnished": {
+      "authors": [
+        "Anik Patel"
+      ],
+      "description": "A C++ chess engine with a neural evaluator trained from scratch.",
+      "projectUrl": "https://github.com/Bobingstern/Tarnished",
+      "builds": {
+        "5.0": {
+          "sourceUrl": "https://github.com/Bobingstern/Tarnished/releases/tag/v5.0"
+        }
+      }
+    },
+    "teki": {
+      "authors": [
+        "Manik Charan"
+      ],
+      "description": "An open-source UCI engine in C++.",
+      "projectUrl": "https://github.com/Mk-Chan/Teki",
+      "builds": {
+        "2": {
+          "sourceUrl": "https://github.com/lukasmonk/lucaschessR6/blob/9b1c1d073423f67e5f99c439918913d4f32caa5c/bin/OS/linux/Engines/teki/src.7z",
+          "license": "MIT",
+          "licenseUrl": "https://github.com/lukasmonk/lucaschessR6/blob/9b1c1d073423f67e5f99c439918913d4f32caa5c/bin/OS/linux/Engines/teki/LICENSE.txt"
+        }
+      }
+    },
+    "texel": {
+      "authors": [
+        "Peter Österlund"
+      ],
+      "description": "A chess engine by the author of CuckooChess, with configurable evaluation and endgame support.",
+      "projectUrl": "https://github.com/peterosterlund2/texel",
+      "builds": {
+        "1.08": {
+          "sourceUrl": "https://github.com/peterosterlund2/texel/releases/tag/1.08",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/peterosterlund2/texel/blob/1.08/COPYING"
+        }
+      }
+    },
+    "triumviratus": {
+      "authors": [
+        "Tors3"
+      ],
+      "description": "A C++ engine with bitboard move generation, alpha-beta search, and Syzygy endgame tablebases.",
+      "projectUrl": "https://github.com/Tors3/Triumviratus",
+      "builds": {
+        "8.1": {
+          "sourceUrl": "https://github.com/Tors3/Triumviratus/releases/tag/v8.1",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/Tors3/Triumviratus/blob/v8.1/COPYING"
+        }
+      }
+    },
+    "tucano": {
+      "authors": [
+        "Alcides Schulz"
+      ],
+      "description": "An open-source chess engine by Alcides Schulz.",
+      "projectUrl": "https://github.com/alcides-schulz/Tucano",
+      "builds": {
+        "12.00": {
+          "sourceUrl": "https://github.com/alcides-schulz/Tucano/releases/tag/12.00",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/alcides-schulz/Tucano/blob/12.00/copying.txt"
+        }
+      }
+    },
+    "velvet": {
+      "authors": [
+        "Martin Honert"
+      ],
+      "description": "A UCI chess engine developed in Rust.",
+      "projectUrl": "https://github.com/mhonert/velvet-chess",
+      "builds": {
+        "8.1.1": {
+          "sourceUrl": "https://github.com/mhonert/velvet-chess/releases/tag/v8.1.1",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/mhonert/velvet-chess/blob/v8.1.1/LICENSE"
+        }
+      }
+    },
+    "viridithas": {
+      "authors": [
+        "Cosmo Bobak"
+      ],
+      "description": "A UCI chess engine developed by Cosmo Bobak.",
+      "projectUrl": "https://github.com/cosmobobak/viridithas",
+      "builds": {
+        "19.0.1": {
+          "sourceUrl": "https://github.com/cosmobobak/viridithas/releases/tag/v19.0.1",
+          "license": "MIT",
+          "licenseUrl": "https://github.com/cosmobobak/viridithas/blob/v19.0.1/LICENSE"
+        }
+      }
+    },
+    "wasp": {
+      "authors": [
+        "John Stanback"
+      ],
+      "description": "A chess engine that began as a rewrite of Zarkov.",
+      "projectUrl": "https://waspchess.com/",
+      "builds": {
+        "7": {
+          "sourceUrl": "https://www.waspchess.com/wasp_7.00.html",
+          "license": "MIT",
+          "licenseUrl": "https://waspchess.com/license.txt"
+        }
+      }
+    },
+    "weiawaga": {
+      "authors": [
+        "Heiaha"
+      ],
+      "description": "A Rust UCI engine with move generation inspired by Surge.",
+      "projectUrl": "https://github.com/Heiaha/Weiawaga",
+      "builds": {
+        "6.0": {
+          "sourceUrl": "https://github.com/Heiaha/Weiawaga/releases/tag/v6.0",
+          "license": "GNU GPL v2",
+          "licenseUrl": "https://github.com/Heiaha/Weiawaga/blob/v6.0/LICENSE"
+        }
+      }
+    },
+    "winter": {
+      "authors": [
+        "Jonathan Rosenthal"
+      ],
+      "description": "A UCI chess engine that supports Armageddon time controls.",
+      "projectUrl": "https://github.com/rosenthj/Winter",
+      "builds": {
+        "4.0": {
+          "sourceUrl": "https://github.com/rosenthj/Winter/releases/tag/v4.0",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/rosenthj/Winter/blob/v4.0/Copying.txt"
+        }
+      }
+    },
+    "wyldchess": {
+      "authors": [
+        "Manik Charan"
+      ],
+      "description": "A C chess engine with support for UCI and XBoard.",
+      "projectUrl": "https://github.com/Mk-Chan/WyldChess",
+      "builds": {
+        "1.51": {
+          "sourceUrl": "https://github.com/Mk-Chan/WyldChess/tree/v1.51",
+          "license": "GNU GPL v3",
+          "licenseUrl": "https://github.com/Mk-Chan/WyldChess/blob/v1.51/LICENSE"
+        }
+      }
+    },
+    "zagreus": {
+      "authors": [
+        "Danny Jelsma"
+      ],
+      "description": "A UCI engine developed as an ongoing personal chess project.",
+      "projectUrl": "https://github.com/Dannyj1/Zagreus",
+      "builds": {
+        "5.0": {
+          "sourceUrl": "https://github.com/Dannyj1/Zagreus/releases/tag/v5.0",
+          "license": "GNU AGPL v3",
+          "licenseUrl": "https://github.com/Dannyj1/Zagreus/blob/v5.0/LICENSE"
+        }
+      }
+    },
+    "zurichess": {
+      "authors": [
+        "Alexandru Mosoi",
+        "Zurichess contributors"
+      ],
+      "description": "A chess engine developed in Go.",
+      "creditsUrl": "https://lucaschess.pythonanywhere.com/thanks?clave=Engines-2",
+      "builds": {
+        "neuchatel": {
+          "sourceUrl": "https://github.com/lukasmonk/lucaschessR6/blob/9b1c1d073423f67e5f99c439918913d4f32caa5c/bin/OS/linux/Engines/zurichess/src.7z",
+          "license": "BSD 3-Clause",
+          "licenseUrl": "https://github.com/lukasmonk/lucaschessR6/blob/9b1c1d073423f67e5f99c439918913d4f32caa5c/bin/OS/linux/Engines/zurichess/LICENSE"
+        }
+      }
+    }
+  }
+}
